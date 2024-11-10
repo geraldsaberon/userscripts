@@ -10,7 +10,7 @@
 // @run-at       document-idle
 // ==/UserScript==
 
-document.querySelector(".BookActions__button:has(button[aria-label*=Kindle])").remove()
+document.querySelector(".BookActions__button:nth-child(2)").remove()
 
 const bookAuthor = document.querySelector(".ContributorLink__name").textContent
 const bookTitle = document.querySelector(".Text__title1").textContent
